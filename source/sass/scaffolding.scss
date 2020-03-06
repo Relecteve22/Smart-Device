@@ -14,12 +14,13 @@ body {
   padding: 0;
 
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: $text-size--small;
-  line-height: $text-height--small;
+  font-size: 16px;
+  line-height: 18px;
+  min-width: 320px;
   font-weight: 400;
   color: $color-main-text;
 
-  background-color: #ffffff;
+  background-color: #e5e5e5;
 }
 
 a {

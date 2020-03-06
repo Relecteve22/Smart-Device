@@ -1,11 +1,11 @@
-Папка для файлов препроцессора Less.
+Папка для файлов препроцессора Scss.
 
-http://lesscss.org
+http://scsscss.org
 
 --
 
 Структура файлов:
 
-less/
-| - style.less
-| - [другие *.less файлы]
+scss/
+| - style.scss
+| - [другие *.scss файлы]
