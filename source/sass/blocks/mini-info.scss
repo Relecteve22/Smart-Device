@@ -1,0 +1,76 @@
+.mini-info {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  padding-top: 19px;
+
+  list-style: none;
+}
+
+.mini-info li {
+  padding-left: 122px;
+
+  font-size: 16px;
+}
+
+.mini-info__link {
+  position: relative;
+
+  color: #ffffff;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.mini-info__link--email::before {
+  content: "";
+
+  position: absolute;
+  top: 2.5px;
+  left: -39px;
+
+  width: 19px;
+  height: 14px;
+
+  background-image: url("../../img/emale-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.mini-info__link--phone::before {
+  content: "";
+
+  position: absolute;
+  top: 1px;
+  left: -35px;
+
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../../img/iphone-icon.svg");
+  background-repeat: no-repeat;
+}
+
+.menu-header__ordered-ring {
+  width: 180px;
+  margin-top: 4px;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  padding: 0 10px;
+  padding-right: 14px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  border: none;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  border-radius: 5px;
+}

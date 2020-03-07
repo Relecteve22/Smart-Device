@@ -1,6 +1,46 @@
 .menu-header {
-  display: flex;
-  width: 1411px;
-  padding: 0;
+  // width: 1471px;
+  padding: 33px 30px;
   margin: 0 auto;
+
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1471px;
+}
+
+.menu-header__wrappers {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-header__logo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menu-header__text-wrapper {
+  margin-left: 10px;
+}
+
+.menu-header__title {
+  margin: 0;
+  margin-top: 6px;
+  margin-left: 6px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+.menu-header__description {
+  margin: 0;
+  margin-top: 2px;
+  margin-left: 4px;
+
+  font-size: 12px;
+  font-family: "Roboto", "Arial", sans-serif;
+  color: #788891
 }
