@@ -98,11 +98,20 @@
   }
 }
 
+.promo-header__wrapper-image {
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
 .promo-header__big-card {
   position: relative;
 
-  flex-shrink: 0;
   margin-top: 136px;
+}
+
+.promo-header__big-triangles {
+  margin-top: -774px;
+  margin-left: -1037px;
 }
 
 .promo-header__free-tutorial-text--mobile {
@@ -154,8 +163,19 @@
   }
 
   .promo-header__big-card {
-    margin-top: 20px;
+    margin-top: 19px;
+    margin-left: 0;
+  }
+
+  .promo-header__wrapper-image {
+    width: 530px;
     margin-left: -10px;
+  }
+
+  .promo-header__big-triangles {
+    position: absolute;
+    top: 691px;
+    right: -282px;
   }
 }
 
@@ -206,7 +226,6 @@
 
   .promo-header__big-card {
     margin-top: 20px;
-    margin-left: -10px;
   }
 
   .promo-header__big-card-img {
@@ -220,5 +239,10 @@
 
   .promo-header__free-tutorial-text--desktop {
     display: none;
+  }
+
+  .promo-header__big-triangles {
+    top: 519px;
+    right: -460px;
   }
 }

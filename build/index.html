@@ -59,6 +59,7 @@
           </button>
           <button class="promo-header__scroll-down">Скролл вниз</button>
         </div>
+        <div class="promo-header__wrapper-image">
           <aside class="promo-header__big-card">
             <picture>
               <source media="(min-width: 1023px)" srcset="img/big-card.png">
@@ -66,7 +67,14 @@
               <img class="promo-header__big-card-img" src="img/min-card.png">
             </picture>
           </aside>
-        
+          <aside class="promo-header__big-triangles">
+            <picture>
+              <source media="(min-width: 1023px)" srcset="img/big-triangles.svg">
+              <source media="(min-width: 768px)" srcset="img/medium-triangles.svg">
+              <img class="promo-header__big-triangles-img" src="img/min-triangles.svg">
+            </picture>
+          </aside>
+        </div>
     </footer></section>
   </body>
   <script src="js/picturefill.js">
@@ -77,17 +85,3 @@
   <script src="js/script.js">
   </script>
 </html>
-
-<!-- &::before {
-  content: "";
-
-  position: absolute;
-  top: -187px;
-  left: -970px;
-
-  width: 1920px;
-  height: 950px;
-
-  background-image: url("../../img/big-triangles.svg");
-  background-repeat: no-repeat;
-} -->
