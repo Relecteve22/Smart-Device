@@ -18,19 +18,27 @@
         <div class="menu-header__wrappers">
           <a class="menu-header__logo">
             <picture>
-              <img class="menu-header__logo-image" src="img/logo.svg" width="52" height="52" alt="Smart device">
+              <source media="(min-width: 768px)" srcset="img/logo.svg">
+              <img class="menu-header__logo-image" src="img/min-logo.svg" alt="Smart device">
             </picture>
             <div class="menu-header__text-wrapper">
               <h2 class="menu-header__title">Smart Device</h2>
               <p class="menu-header__description">умные технологии</p>
             </div>
           </a>
+          <button class="mini-header__burger-menu">
+            <span class="visually-hidden">Открыть бургер меню</span>
+          </button>
           <ul class="mini-info">
             <li class="mini-info__item mini-info__item--email">
-              <a class="mini-info__link mini-info__link--email" href="mailto:info@sd.ru">info@sd.ru</a>
+              <a class="mini-info__link mini-info__link--email" href="mailto:info@sd.ru">
+                <span class="mini-info__link-text">info@sd.ru</span>
+              </a>
             </li>
             <li class="mini-info__item mini-info__item--phone">
-              <a class="mini-info__link mini-info__link--phone" href="tel:+74950005252">+7 (495) 000 52 52</a>
+              <a class="mini-info__link mini-info__link--phone" href="tel:+74950005252">
+                <span class="mini-info__link-text">+7 (495) 000 52 52</span>
+              </a>
             </li>
           </ul>
           <button class="menu-header__ordered-ring">Заказать звонок</button>
@@ -38,20 +46,33 @@
       </header>
       <footer class="promo-header">
         <div class="promo-header__container">
-          <dl>
+          <dl class="promo-header__wrapper">
             <dt class="promo-header__title">Печатные платы</dt>
             <dd class="promo-header__description">
               производство и монтаж, поставка комплектующих,
               блоков и модулей.
             </dd>
           </dl>
-          <button class="promo-header__free-tutorial">Получить бесплатную консультацию</button>
+          <button class="promo-header__free-tutorial">
+            <span class="promo-header__text-button promo-header__text-button--take">Получить</span>
+            <span class="promo-header__text-button">бесплатную консультацию</span>
+          </button>
           <button class="promo-header__scroll-down">Скролл вниз</button>
         </div>
         <aside class="promo-header__big-card">
-          <img width="705" height="515" src="img/big-card.png">
+          <picture>
+            <source media="(min-width: 1023px)" srcset="img/big-card.png">
+            <source media="(min-width: 768px)" srcset="img/medium-card.png">
+            <img class="promo-header__big-card-img" src="img/min-card.png">
+          </picture>
         </aside>
-      </footer>
-    </section>
+    </footer></section>
   </body>
+  <script src="js/picturefill.js">
+  </script>
+  <script src="js/svg4everybody.js">
+  </script>
+  <script>svg4everybody(); </script>
+  <script src="js/script.js">
+  </script>
 </html>

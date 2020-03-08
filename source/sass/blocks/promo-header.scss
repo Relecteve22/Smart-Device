@@ -104,17 +104,126 @@
   flex-shrink: 0;
   margin-top: 136px;
 
-  &::before {
-    content: "";
+  // &::before {
+  //   content: "";
 
-    position: absolute;
-    top: -256px;
-    left: -1037px;
+  //   position: absolute;
+  //   top: 1px;
+  //   left: 1px;
 
-    width: 1920px;
-    height: 950px;
+  //   width: 705px;
+  //   height: 515px;
 
-    background-image: url("../../img/big-triangles.svg");
-    background-repeat: no-repeat;
+  //   background-image: url("../../img/big-triangles.png");
+  //   background-repeat: no-repeat;
+  // }
+}
+
+@media (max-width: $tablet-width-max) {
+  .promo-header {
+    min-width: $mobile-width;
+    max-width: 760px;
+    min-height: 593px;
+    padding: 0 20px;
+    padding-left: 83px;
+  }
+
+  .promo-header__title {
+    max-width: 760px;
+    margin-top: 96px;
+
+    font-size: 60px;
+    line-height: 70px;
+  }
+
+  .promo-header__description {
+    width: 360px;
+    margin-left: 51px;
+    margin-top: 28px;
+
+    font-size: 18px;
+    line-height: 156.8%;
+
+    &::before {
+      top: 17px;
+      left: -48px;
+
+      width: 33px;
+    }
+  }
+
+  .promo-header__free-tutorial {
+    width: 380px;
+    margin-top: 39px;
+    margin-bottom: 164px;
+    margin-left: 51px;
+  }
+
+  .promo-header__scroll-down {
+    display: none;
+  }
+
+  .promo-header__big-card {
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .promo-header {
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    min-width: $mobile-width;
+    max-width: 320px;
+    min-height: 580px;
+    padding: 0 10px;
+  }
+
+  .promo-header__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .promo-header__title {
+    z-index: 10;
+    max-width: 277px;
+    margin-top: -42px;
+    margin-left: 5px;
+
+    font-size: 40px;
+    line-height: 47px;
+  }
+
+  .promo-header__description {
+    width: 245px;
+    margin-left: 56px;
+    margin-top: 27px;
+
+    font-size: 16px;
+
+    &::before {
+      top: 16px;
+    }
+  }
+  .promo-header__text-button--take {
+    display: none;
+  }
+
+  .promo-header__free-tutorial {
+    width: 287px;
+    margin: 0 auto;
+    margin-top: 26px;
+    margin-bottom: 70px;
+    margin-left: 9px;
+  }
+
+  .promo-header__big-card {
+    margin-top: 20px;
+    margin-left: -10px;
+  }
+
+  .promo-header__big-card-img {
+    margin-left: 27px;
+    margin-top: 5px;
   }
 }
