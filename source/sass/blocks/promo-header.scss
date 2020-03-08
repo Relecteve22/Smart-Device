@@ -103,20 +103,10 @@
 
   flex-shrink: 0;
   margin-top: 136px;
+}
 
-  // &::before {
-  //   content: "";
-
-  //   position: absolute;
-  //   top: 1px;
-  //   left: 1px;
-
-  //   width: 705px;
-  //   height: 515px;
-
-  //   background-image: url("../../img/big-triangles.png");
-  //   background-repeat: no-repeat;
-  // }
+.promo-header__free-tutorial-text--mobile {
+  display: none;
 }
 
 @media (max-width: $tablet-width-max) {
@@ -205,9 +195,6 @@
       top: 16px;
     }
   }
-  .promo-header__text-button--take {
-    display: none;
-  }
 
   .promo-header__free-tutorial {
     width: 287px;
@@ -225,5 +212,13 @@
   .promo-header__big-card-img {
     margin-left: 27px;
     margin-top: 5px;
+  }
+
+  .promo-header__free-tutorial-text--mobile {
+    display: block;
+  }
+
+  .promo-header__free-tutorial-text--desktop {
+    display: none;
   }
 }
