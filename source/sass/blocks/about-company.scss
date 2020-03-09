@@ -1,0 +1,152 @@
+.about-company {
+  margin-top: 105px;
+}
+
+.about-company__wrappers {
+  position: relative;
+
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 40px;
+  padding-left: 210px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 52px;
+    left: -49px;
+
+    width: 317px;
+    height: 220px;
+
+    background-image: url("../../img/year-bases-min.png");
+    background-repeat: no-repeat;
+
+    transform: rotate(-90deg);
+  }
+}
+
+.about-company__title {
+  margin: 0;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 36px;
+  line-height: 51px;
+}
+
+.about-company__wrappers p {
+  margin: 0;
+  margin-top: 22px;
+
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about-company__more-detailes {
+  width: 180px;
+  padding: 13px 10px;
+  margin-top: 40px;
+  margin-bottom: 111px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #00b2ff;
+
+  background-color: transparent;
+  border: 1px solid #00b2ff;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.about-company__description-phone {
+  display: none;
+}
+
+@media (max-width: $tablet-width-max) {
+  .about-company {
+    margin-top: 55px;
+  }
+
+  .about-company__wrappers {
+    min-width: $mobile-width;
+    max-width: 760px;
+    padding: 0 20px;
+    padding-left: 205px;
+
+    &::before {
+      left: -69px;
+
+      width: 361.79px;
+      height: 251.08px;
+
+      background-image: url("../../img/year-bases-big.png");
+    }
+  }
+
+  .about-company__title {
+    margin-bottom: 26px;
+
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+
+  .about-company p {
+    padding-left: 3px;
+    margin-top: 22px;
+  }
+
+  .about-company__description-computer {
+    display: none;
+  }
+
+  .about-company__description-phone {
+    display: block;
+  }
+
+  .about-company__more-detailes {
+    margin-left: 2px;
+    margin-top: 42px;
+    margin-bottom: 85px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .about-company__wrappers {
+    min-width: $mobile-width;
+    max-width: 320px;
+    padding: 0 14px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .about-company__title {
+    margin-bottom: 22px;
+    font-size: 28px;
+  }
+
+  .about-company p {
+    padding-left: 3px;
+    margin-top: 42px;
+  }
+
+  .about-company__wrappers .about-company__description-one {
+    margin-top: 0;
+  }
+
+  .about-company__more-detailes {
+    margin-top: 32px;
+    margin-bottom: 65px;
+  }
+}
