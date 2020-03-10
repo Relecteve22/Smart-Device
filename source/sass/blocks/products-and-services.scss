@@ -1,0 +1,66 @@
+.products-and-services {
+  min-height: 938px;
+
+  background-color: #1b2d37;
+}
+
+.products-and-services__wrappers {
+  width: 100%;
+  min-width: 1024px;
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+  padding-top: 87px;
+}
+
+.products-and-services__title {
+  margin: 0;
+  margin-bottom: 53px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+@media (max-width: $tablet-width-max) {
+  .products-and-services {
+    min-height: 1127px;
+  }
+
+  .products-and-services__wrappers {
+    min-width: $mobile-width;
+    max-width: 760px;
+    padding: 0 20px;
+    padding-top: 49px;
+  }
+
+  .products-and-services__title {
+    margin-bottom: 3px;
+    width: 85%;
+
+    font-size: 32px;
+    line-height: 140.62%;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .products-and-services {
+    min-height: 1101px;
+  }
+
+  .products-and-services__wrappers {
+    min-width: $mobile-width;
+    max-width: 320px;
+    padding: 0 15px;
+    padding-top: 49px;
+  }
+  .products-and-services__title {
+    margin-bottom: 13px;
+    margin-left: 10px;
+    width: 100%;
+
+    font-size: 28px;
+  }
+}

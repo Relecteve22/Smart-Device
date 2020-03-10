@@ -1,0 +1,142 @@
+.list-products {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  margin-bottom: 128px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.list-products__item {
+  width: 31.6%;
+  min-height: 620px;
+
+  background-color: #1b2d37;
+  background-repeat: no-repeat;
+}
+
+.list-products__link {
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.list-products__item--production {
+  background-image: url("../../img/production-card-desktop.png");
+}
+
+.list-products__item--montage {
+  background-image: url("../../img/montage-card-desktop.png");
+}
+
+.list-products__item--detailes {
+  background-image: url("../../img/detailes-card-desktop.png");
+}
+
+.list-products__item-title {
+  width: 160px;
+  margin: 0;
+  margin-top: 51px;
+  margin-left: 45px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.list-products__btn-open {
+  position: relative;
+
+  margin-left: auto;
+  margin-top: auto;
+  width: 63px;
+  height: 63px;
+
+  background: #00b2ff;
+  border: none;
+
+  &:after {
+    content: "";
+
+    position: absolute;
+    top: 27px;
+    left: 32px;
+
+    width: 40px;
+    height: 23px;
+
+    background-image: url("../../img/arrow.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: $tablet-width-max) {
+  .list-products {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  .list-products__item {
+    display: flex;
+    width: 100%;
+    min-height: 256px;
+    margin-top: 46px;
+  }
+
+  .list-products__link {
+    width: 100%;
+    height: auto;
+  }
+
+  .list-products__item--production {
+    background-image: url("../../img/production-card-tablet.png");
+  }
+
+  .list-products__item--montage {
+    background-image: url("../../img/montage-card-tablet.png");
+  }
+
+  .list-products__item--detailes {
+    background-image: url("../../img/detailes-card-tablet.png");
+  }
+
+  .list-products__item-title {
+    margin-top: 42px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .list-products__item {
+    margin-top: 30px;
+  }
+
+  .list-products__item--production {
+    background-image: url("../../img/production-card-phone.png");
+  }
+
+  .list-products__item--montage {
+    background-image: url("../../img/montage-card-phone.png");
+  }
+
+  .list-products__item--detailes {
+    background-image: url("../../img/detailes-card-phone.png");
+  }
+
+  .list-products__item-title {
+    margin-top: 20px;
+    margin-left: 36px;
+  }
+
+  .list-products__btn-open::after {
+    left: 29px;
+  }
+}
