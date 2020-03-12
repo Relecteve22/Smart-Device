@@ -1,0 +1,147 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-left: 4px;
+}
+
+.form__label {
+  width: 47.3%;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.form__input {
+  width: 100%;
+  padding: 15px 17px;
+
+  border: none;
+  background-color: #19baff;
+
+  font-family: "PTMono", "Courier", monospace;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  &:focus {
+    outline: 1px #ffffff solid;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
+}
+
+.form__input::placeholder {
+  font-family: "PTMono", "Courier", monospace;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__description {
+  width: 100%;
+  margin-top: 41px;
+  min-height: 154px;
+  padding: 11px 16px;
+  margin-bottom: 43px;
+
+  border: none;
+  background-color: #19baff;
+
+  font-family: "PTMono", "Courier", monospace;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  resize: none;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.form__description::placeholder {
+  font-family: "PTMono", "Courier", monospace;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form__button {
+  width: 47.3%;
+  padding: 13px 10px;
+  margin-left: 1px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.form__rule {
+  display: flex;
+  width: 47.3%;
+  padding-left: 8px;
+  padding-top: 7.4px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.form__text-rule {
+  width: 85%;
+  margin-left: 16px;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #FFFFFF;
+}
+
+.form__checkbox-indicator {
+  position: relative;
+
+  width: 16px;
+  height: 16px;
+
+  border: 1px solid #ffffff;
+}
+
+
+.form__checkbox:checked + .form__checkbox-indicator::after {
+  content: "";
+
+  position: absolute;
+  top: 5px;
+  left: 3px;
+
+  width: 7.5px;
+  height: 9.5px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
+.form__checkbox:focus + .form__checkbox-indicator {
+  outline: 1px #ffffff solid;
+}
