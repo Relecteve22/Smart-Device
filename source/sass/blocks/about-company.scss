@@ -65,7 +65,16 @@
 
   &:hover {
     opacity: 0.5;
+    cursor: pointer;
   }
+}
+
+.about-company__description {
+  margin-top: 22px;
+}
+
+.about-company__description p {
+  margin: 0;
 }
 
 .about-company__description-phone {
