@@ -53,11 +53,13 @@
               блоков и модулей.
             </dd>
           </dl>
-          <button class="promo-header__free-tutorial">
-            <span class="promo-header__free-tutorial-text promo-header__free-tutorial-text--desktop">Получить бесплатную консультацию</span>
-            <span class="promo-header__free-tutorial-text promo-header__free-tutorial-text--mobile">Бесплатная консультация</span>
-          </button>
-          <button class="promo-header__scroll-down">Скролл вниз</button>
+          <div class="promo-header__free-tutorial">
+            <a href="#form-connect" id="free-tutorial">
+              <span class="promo-header__free-tutorial-text promo-header__free-tutorial-text--desktop">Получить бесплатную консультацию</span>
+              <span class="promo-header__free-tutorial-text promo-header__free-tutorial-text--mobile">Бесплатная консультация</span>
+            </a>
+          </div>
+          <a href="#advantages" id="scroll" class="promo-header__scroll-down">Скролл вниз</a>
         </div>
         <div class="promo-header__wrapper-image">
           <aside class="promo-header__big-card">
@@ -85,7 +87,7 @@
           <img class="page-main__bg-triangles-img" src="img/bg-big-triangles.svg"/>
         </picture>
       </div> -->
-      <section class="advantages">
+      <section id="advantages" class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="advantages__wrappers">
           <div class="advantage__item">
@@ -182,7 +184,7 @@
           </ul>
         </div>
       </section>
-      <section class="form-connect">
+      <section id="form-connect" class="form-connect">
         <div class="form-connect__container">
           <div class="form-connect__wrapper-image">
             <aside class="form-connect__airplane">
@@ -204,7 +206,7 @@
                 <input class="form__input" type="text" name="name" placeholder="Имя" required>
               </label>
               <label class="form__label">
-                <input class="form__input" type="tel" name="phone" placeholder="Телефон" required>
+                <input class="form__input" type="tel" name="phone" placeholder="Телефон" pattern="[\+]\d{1}[\(]\d{3}[\)]\d{3}[\-]\d{2}[\-]\d{2}" data-inputmask="+{7}(000)000-00-00" required>
               </label>
               <textarea class="form__description" name="comment" placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
               <button class="form__button" type="submit">Задать вопрос</button>
@@ -224,6 +226,6 @@
   <script src="js/svg4everybody.js">
   </script>
   <script>svg4everybody(); </script>
-  <script src="js/script.js">
+  <script src="js/scroll.js">
   </script>
 </html>
