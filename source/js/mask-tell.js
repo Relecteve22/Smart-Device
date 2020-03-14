@@ -2,29 +2,35 @@
 
 (function () {
   var setupPhone = document.querySelector('.form__input--tel');
+  setupPhone.addEventListener('focus', function () {
+    if (setupPhone.value === '') {
+      setupPhone.value = '+7(';
+    }
 
-  // var brickHelpHandler = function () {
-  //
-  //
-  // };
-
-  // setupPhone.addEventListener('click', brickHelpHandler);
-
-  setupPhone.addEventListener('click', function () {
-    setupPhone.value.textContent = '+7(';
   });
 
+  window.setInterval(function () {
+    if (setupPhone.value.length === 6) {
+      setupPhone.value = setupPhone.value + ')';
+    }
+    if (setupPhone.value.length === 10) {
+      setupPhone.value = setupPhone.value + '-';
+    }
+    if (setupPhone.value.length === 13) {
+      setupPhone.value = setupPhone.value + '-';
+    }
+  }, 100);
 
+  var maskedInputs = document.querySelectorAll('input[data-inputmask]');
 
+  var applyMask = function () {
+    Array.prototype.forEach.call(maskedInputs, function (input) {
+      var maskOption = {
+        mask: input.getAttribute('data-inputmask')
+      };
+      IMask(input, maskOption);
+    });
+  };
 
-
-  // var focusBrickHelp = function () {
-  //   setupPhone.addEventListener('focus', brickHelpHandler);
-  // };
-
-  // focusBrickHelp();
-
-  // setupPhone.addEventListener('blur', function () {
-  //   document.removeEventListener('focus', focusBrickHelp);
-  // });
+  applyMask();
 })();
