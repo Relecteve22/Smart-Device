@@ -4,6 +4,8 @@
 }
 
 .form-connect__container {
+  position: relative;
+
   display: flex;
   width: 100%;
   min-width: 1024px;
@@ -12,6 +14,20 @@
   padding: 0 30px;
   padding-top: 90px;
   min-height: 670px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 34px;
+    right: -491px;
+
+    width: 509.53px;
+    height: 669.26px;
+
+    background-image: url("../../img/bg-big-triangles-for-form.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .form-connect__wrapper-image {
@@ -78,6 +94,10 @@
     padding: 0 82px;
     padding-top: 79px;
     min-height: 664px;
+
+    &::after {
+      display: none;
+    }
   }
 
   .form-connect__wrapper-image {
