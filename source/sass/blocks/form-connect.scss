@@ -1,5 +1,6 @@
 .form-connect {
   background-color: #00b2ff;
+  overflow: hidden;
 }
 
 .form-connect__container {
@@ -14,7 +15,34 @@
 }
 
 .form-connect__wrapper-image {
+  position: relative;
+
+  display: flex;
+  margin-top: 69px;
+  margin-left: -25px;
   flex-shrink: 0;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -21px;
+    left: -226px;
+
+    width: 670.33px;
+    height: 641px;
+
+    background-image: url("../../img/bg-triangles-for-airplane.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.form-connect__airplane {
+  z-index: 1;
+}
+
+.form-connect__airplane-img {
+  margin-right: 85px;
 }
 
 .form-connect__wrappers {

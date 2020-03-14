@@ -1,6 +1,5 @@
 .advantages {
   margin-top: 79px;
-  // order: 1;
 }
 
 .advantages__wrappers {
@@ -23,6 +22,7 @@
   padding: 0 10px;
 
   border: 1px solid #ebebeb;
+  background-color: #ffffff;
 
   &::before {
     content: "";
@@ -40,7 +40,9 @@
   &:hover {
     background: #00b2ff;
 
-    fill: #ffffff;
+    .advantage__item-svg {
+      fill: #ffffff;
+    }
   }
 
   &:hover .advantage__item-title {
@@ -55,6 +57,7 @@
 .advantage__item-svg {
   margin-top: 39px;
   margin-left: 35px;
+  fill: #00b2ff;
 }
 
 .advantage__item-title {
