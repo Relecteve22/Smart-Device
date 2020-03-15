@@ -246,15 +246,12 @@
             </ul>
           </div>
           <div class="menu-footer__blocks-site">
-            <div class="menu-footer__blocks-site-container">
+            <div class="menu-footer__blocks-site-container accordion">
               <h3 class="menu-footer__blocks-site-title">Разделы сайта</h3>
-              <button class="menu-footer__button-blocks-site menu-footer__button-blocks-site-close">
-                <span class="visually-hidden">Закрыть поле</span>
-              </button>
-              <button class="menu-footer__button-blocks-site menu-footer__button-blocks-site-open menu-footer__button-blocks-site-open--active">
+              <button class="menu-footer__button-blocks-site accordion__toggle">
                 <span class="visually-hidden">Раскрыть поле</span>
               </button>
-              <ul class="menu-footer__list-section menu-footer__list-section--close">
+              <ul class="menu-footer__list-section accordion__pane">
                 <li class="menu-footer__item-section">О компании</li>
                 <li class="menu-footer__item-section">Продукты</li>
                 <li class="menu-footer__item-section">Производство печатных плат</li>
@@ -266,15 +263,12 @@
             </div>
           </div>
           <div class="menu-footer__contact">
-            <div class="menu-footer__contact-container">
+            <div class="menu-footer__contact-container accordion">
               <h3 class="menu-footer__contact-title">Наш офис</h3>
-              <button class="menu-footer__button-contact menu-footer__button-contact-close menu-footer__button-contact-close--active">
-                <span class="visually-hidden">Закрыть поле</span>
-              </button>
-              <button class="menu-footer__button-contact menu-footer__button-contact-open">
+              <button class="menu-footer__button-contact accordion__toggle">
                 <span class="visually-hidden">Раскрыть поле</span>
               </button>
-              <ul class="menu-footer__list-contact">
+              <ul class="menu-footer__list-contact accordion__pane">
                 <li class="menu-footer__item-address">г. Мытищи, Олимпийский проспект, д.10</li>
                 <li class="menu-footer__item-contact">
                   <a class="menu-footer__link" href="tel:+74955894050">
@@ -342,5 +336,7 @@
   <script src="js/mask-tell.js">
   </script>
   <script src="js/popup.js">
+  </script>
+  <script src="js/accordion.js">
   </script>
 </html>

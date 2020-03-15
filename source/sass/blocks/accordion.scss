@@ -1,0 +1,57 @@
+.accordion__toggle {
+  display: none;
+}
+
+@media (max-width: $mobile-width-only) {
+  .accordion__toggle {
+    position: relative;
+
+    display: block;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 3px;
+    width: 16px;
+    height: 16px;
+
+    background-color: transparent;
+    border: none;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+    }
+  }
+
+  .accordion__toggle::after  {
+    top: 7px;
+    left: 1px;
+
+    width: 16px;
+    height: 1px;
+
+    background-color: #c4c4c4;
+  }
+
+  .accordion__toggle::before {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: 0;
+
+    width: 16px;
+    height: 1px;
+
+    background-color: #c4c4c4;
+    transform: rotate(90deg);
+  }
+
+  .accordion__toggle--inactive::before {
+    display: none
+  }
+
+  .accordion__pane--hidden {
+    display: none;
+  }
+}
