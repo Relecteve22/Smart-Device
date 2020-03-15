@@ -1,7 +1,7 @@
 'use strict';
 
 (function () {
-  var setupPhone = document.querySelector('.form__input--tel');
+  var setupPhone = document.querySelector('.input--tel');
   setupPhone.addEventListener('focus', function () {
     if (setupPhone.value === '') {
       setupPhone.value = '+7(';
