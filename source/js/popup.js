@@ -72,10 +72,4 @@
       }
     }
   });
-
-  // popup.addEventListener('click', function (evt) {
-  //   if (evt.target === popup) {
-  //     closePopup();
-  //   }
-  // });
 })();
