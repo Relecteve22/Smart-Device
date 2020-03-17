@@ -1,7 +1,9 @@
+/*eslint-disable*/
+
 'use strict';
 
 (function () {
-  var setupPhone = document.querySelector('.input--tel');
+  var setupPhone = document.querySelector('.js__input--tel');
   setupPhone.addEventListener('focus', function () {
     if (setupPhone.value === '') {
       setupPhone.value = '+7(';
