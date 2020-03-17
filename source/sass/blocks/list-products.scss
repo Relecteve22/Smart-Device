@@ -14,6 +14,7 @@
 
   background-color: #1b2d37;
   background-repeat: no-repeat;
+  background-size: 100%;
 
   cursor: pointer;
 }
@@ -30,15 +31,15 @@
 }
 
 .list-products__item--production {
-  background-image: url("../../img/production-card-desktop.png");
+  background-image: url("../img/production-card-desktop.png");
 }
 
 .list-products__item--montage {
-  background-image: url("../../img/montage-card-desktop.png");
+  background-image: url("../img/montage-card-desktop.png");
 }
 
 .list-products__item--detailes {
-  background-image: url("../../img/detailes-card-desktop.png");
+  background-image: url("../img/detailes-card-desktop.png");
 }
 
 .list-products__item-title {
@@ -64,6 +65,8 @@
 
   background: #00b2ff;
   border: none;
+  
+  cursor: pointer;
 
   &:after {
     content: "";
@@ -75,7 +78,7 @@
     width: 40px;
     height: 23px;
 
-    background-image: url("../../img/arrow.svg");
+    background-image: url("../img/arrow.svg");
     background-repeat: no-repeat;
   }
 }
@@ -100,15 +103,15 @@
   }
 
   .list-products__item--production {
-    background-image: url("../../img/production-card-tablet.png");
+    background-image: url("../img/production-card-tablet.png");
   }
 
   .list-products__item--montage {
-    background-image: url("../../img/montage-card-tablet.png");
+    background-image: url("../img/montage-card-tablet.png");
   }
 
   .list-products__item--detailes {
-    background-image: url("../../img/detailes-card-tablet.png");
+    background-image: url("../img/detailes-card-tablet.png");
   }
 
   .list-products__item-title {
@@ -122,15 +125,15 @@
   }
 
   .list-products__item--production {
-    background-image: url("../../img/production-card-phone.png");
+    background-image: url("../img/production-card-phone.png");
   }
 
   .list-products__item--montage {
-    background-image: url("../../img/montage-card-phone.png");
+    background-image: url("../img/montage-card-phone.png");
   }
 
   .list-products__item--detailes {
-    background-image: url("../../img/detailes-card-phone.png");
+    background-image: url("../img/detailes-card-phone.png");
   }
 
   .list-products__item-title {
