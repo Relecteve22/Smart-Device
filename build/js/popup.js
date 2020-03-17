@@ -6,6 +6,7 @@
   var KEYCODE = {
     esc: 27
   };
+  var body = document.querySelector('body');
   var overlay = document.querySelector('.overlay');
   var popupOpen = document.querySelector('.menu-header__ordered-ring');
   var popup = document.querySelector('.popup');
@@ -19,11 +20,13 @@
   var storage = {};
 
   var openPopup = function () {
+    body.classList.add('popup-show--body');
     popup.classList.add('popup-show');
     overlay.classList.add('overlay--show');
   };
 
   var closePopup = function () {
+    body.classList.remove('popup-show--body');
     popup.classList.remove('popup-show');
     overlay.classList.remove('overlay--show');
   };

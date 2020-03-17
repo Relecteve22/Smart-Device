@@ -20,6 +20,10 @@
   display: flex;
 }
 
+.popup-show--body {
+  overflow-y: hidden;
+}
+
 .popup__title {
   margin: 0;
 
