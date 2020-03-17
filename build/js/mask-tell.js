@@ -30,7 +30,7 @@
       var maskOption = {
         mask: input.getAttribute('data-inputmask')
       };
-      new IMask(input, maskOption);
+      IMask(input, maskOption);
     });
   };
 
