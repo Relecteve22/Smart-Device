@@ -1,10 +1,35 @@
 .page-main {
+  position: relative;
+
   display: flex;
   flex-direction: column;
+
+  overflow: hidden;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: -1;
+
+    width: 1920px;
+    height: 1347px;
+
+    background-image: url("../img/bg-big-triangles.svg");
+    background-repeat: no-repeat;
+  }
 }
-.page-main__bg-triangles-wrappers {
-  position: absolute;
-  z-index: -1;
-  // flex-shrink: 0;
-  // margin-bottom: -1250px;
+
+@media (max-width: $tablet-width-max) {
+  .page-main::after {
+    background-image: url("../img/bg-medium-triangles.svg");
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-main::after {
+    background-image: url("../img/bg-min-triangles.svg"");
+  }
 }
