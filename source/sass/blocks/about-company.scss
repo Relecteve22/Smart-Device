@@ -133,7 +133,7 @@
 @media (max-width: $mobile-width-only) {
   .about-company__wrappers {
     min-width: $mobile-width;
-    max-width: 320px;
+    // max-width: 320px;
     padding: 0 14px;
 
     &::before {

@@ -14,7 +14,6 @@
 
   background-color: #1b2d37;
   background-repeat: no-repeat;
-  background-size: 100%;
 
   cursor: pointer;
 }
@@ -65,7 +64,7 @@
 
   background: #00b2ff;
   border: none;
-  
+
   cursor: pointer;
 
   &:after {
@@ -122,6 +121,8 @@
 @media (max-width: $mobile-width-only) {
   .list-products__item {
     margin-top: 30px;
+
+    background-size: cover;
   }
 
   .list-products__item--production {
